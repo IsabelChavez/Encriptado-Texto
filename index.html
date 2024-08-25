@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Encriptador de texto</title>
+</head>
+<body class="dark">
+  <main>
+    <div class="main-left">
+      <div class="logo">
+        <img src="imagenes/Logo.png" alt="Alura logo">
+      </div>
+      <div class="input-container">
+        <label class="label">
+          <div class="toggle">
+              <input class="toggle-state" type="checkbox" name="check" value="check">
+              <div class="indicator"></div>
+          </div>
+        </label>
+        <textarea id="input" spellcheck="false" placeholder="Ingrese el texto aquí..." autofocus></textarea>
+        <div class="message" id="message">
+          <span>!</span><p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="buttons">
+          <button class="btn primary" id="btn-encrypt">Encriptar</button>
+          <button class="btn secondary" id="btn-decrypt">Desencriptar</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-right">
+      <div class="screen-container hidden">
+        <div id="screen"></div>
+        <button id="copy" class="btn secondary copy">Copiar</button>
+      </div>
+      <div class="center">
+        <div class="search-image">
+          <img src="imagenes/Muñeco.png" alt="Imagen de un muñeco">
+        </div>
+        <div class="empty-text">
+          <h3>Ningún mensaje fue encontrado</h3>
+          <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-center">
+        <p>Diseñado por <a href="https://www.aluracursos.com/" target="_blank">Alura</a> y construido por Isabel Chavez</p>
+        <ul class="icons">
+          <li class="icon"><a href="https://github.com/IsabelChavez" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li class="icon"><a href="https://www.linkedin.com/in/isabel-ch%C3%A1vez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer> 
+  <script src="script.js"></script>
+  <script src="animation.js"></script>
+  <script src="https://kit.fontawesome.com/3feef57c63.js" crossorigin="anonymous"></script>
+</body>
+</html>
